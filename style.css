@@ -1,0 +1,202 @@
+
+
+/* css reset? */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --vh1: rgba(50,50,50,0.9);
+  --vh2: rgba(0,0,0,0.6);
+  --vh3: rgba(0,0,0,0.5);
+  --vh4: rgba(0,0,0,0.4);
+  --vh5: rgba(0,0,0,0.3);
+  --vh6: rgba(0,0,0,0.2);
+  --vh7: rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+header {
+  background-color: var(--vh4);
+  min-height: 30px;
+}
+header ul {
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  display: inline;
+  flex-basis: 50px;
+  flex-grow: 0;
+}
+
+main {
+  display: grid;
+  background-color: var(--vh7);
+}
+
+/* latest articles */
+.latest-articles {
+  /* max-height: auto; */
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  position: relative;
+}
+.latest-articles > h2 {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 30px;
+  grid-column: 1/3;
+  text-align: center;
+  background-color: var(--vh1);
+  margin: auto;
+  padding: 10px;
+}
+.latest-articles > div {
+ padding: 150px 60px;
+ min-height: 50vw;
+ font-size: 1.8rem;
+}
+.la1 {
+  background-color: var(--vh3);
+}
+.la2 {
+  background-color: var(--vh2);
+}
+.la3 {
+  background-color: var(--vh4);
+}
+.la4 {
+  background-color: var(--vh5);
+}
+
+/* membership ad */
+.about-membership {
+  min-height: 400px;
+  color: white;
+  font-size: 1.3rem;
+  padding: 50px 40% 50px 60px;
+  background-color: var(--vh1);
+}
+
+/* recent posts & articles */
+.latest-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 20px; */
+}
+.post {
+  padding: 30px;
+  background-color:var(--vh7);
+}
+.supporters-ad-space {
+  text-align: center;
+  
+}
+.supporters-ad {
+  padding-top: 30px;
+  margin-top: 30px;
+  background-color: var(--vh3);
+  margin-left: 20px;
+  height: 40%;
+  border-radius: 10px;
+}
+.community-ad-space {
+  text-align: center;
+  grid-column: 2 / -1;
+  color: white;
+}
+.community-ad {
+  padding-top: 30px;
+  background-color: var(--vh1);
+  margin: 0 50px 0 30px;
+  height: 600px;
+  border-radius: 12px;
+}
+
+/* book ad banner */
+.book-ad {
+  margin-top: 100px;
+  padding: 20px 100px;
+  text-align: center;
+  background-color: var(--vh1);
+  color: white;
+}
+.book-ad cite {
+  display: block;
+}
+.book-ad p {
+  margin: 1em auto 2em;
+  max-width: 55vw;
+}
+
+/* community links */
+.community-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 60px 60px 20px;
+}
+.pow {
+  grid-column: 1 / -1;
+  font-size: 1.4rem;
+  padding-left: 80px;
+  padding-right: 30px;
+  margin-bottom: 60px;
+  background-color: var(--vh3);
+}
+.link {
+  background-color: var(--vh7);
+  padding: 40px;
+}
+
+/* book feature */
+.featured-book {
+  padding: 30px 200px 30px 30px;
+  background-color: var(--vh1);
+  color: white;
+}
+
+/* curated posts */
+.curated-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 200px;
+}
+.guide-list {
+  padding: 35px;
+  background-color: var(--vh7);
+}
+li::marker {
+  color: red;
+}
+
+/* footer */
+footer {
+  padding: 20px 80px;
+  text-align: center;
+  background-color: var(--vh1);
+  color: white;
+}
+footer > ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer > ul > li {
+  display: inline list-item;
+  line-height: 1.7em;
+  flex: 0 0 auto;
+  padding: 0 20px 0 0;
+}
